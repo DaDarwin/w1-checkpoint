@@ -69,7 +69,7 @@ body{
 
 .subtle-heading{
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
 }
 
 .position-relitive{
@@ -82,4 +82,29 @@ body{
     border-style: ridge;
     width: fit-content;
     padding: 0;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.w-95{
+    width: 96.5%;
+}
+
+.w-70{
+    width: 70%;
+}
+@media (max-width: 1160px){
+    .disappear{
+      display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .rearrange{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .order{order: 1;}
 }
