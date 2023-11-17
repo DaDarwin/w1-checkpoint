@@ -1,17 +1,27 @@
 :root{
     --primary:#779840;
-    --primary--light:#89a34d;
-    --secondary:#e2600f;
+    --primary-light:#89a34d;
+    --secondary:#a48323;
     --page:#a18e6d;
+    --page-light:bisque;
     --details:#444454;
     --details-light:#a8b7d3;
 
 
 }
 
-
+body{
+    font-family: 'Noto Sans Tai Veit';;
+}
 .page{
     background-color:var(--page);
+}
+
+.textbox{
+    color: var(--details);
+    border: 3px groove #444454;
+    box-shadow: 0 4px 4px var(--details) ;
+
 }
 
 .primary-bg{
@@ -22,6 +32,10 @@
     background-color: var(--secondary);
 }
 
+.page-light-bg{
+    background-color: var(--page-light);
+}
+
 .text-details{
     color: var(--details);
 }
@@ -29,7 +43,8 @@
 .bg-1{
     background-image: url(https://images.unsplash.com/photo-1675248086338-8c74bd4796a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGJhYnklMjB0b3J0b2lzZXxlbnwwfHwwfHx8MA%3D%3D);
     background-size: cover;
-    aspect-ratio: 8/5;
+    height: 70vh;
+    background-position: 50%;
 
 }
 
@@ -60,4 +75,11 @@
 .position-relitive{
     position: relative;
     height: 10px;
+}
+
+.imgbox{
+    border: 0 2px var(--details);
+    border-style: ridge;
+    width: fit-content;
+    padding: 0;
 }
